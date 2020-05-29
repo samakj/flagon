@@ -8,6 +8,7 @@ setup(
     author="Sam Jones",
     author_email="samakj@live.co.uk",
     license="MIT",
+    package_dir={"": "src"},
     packages=["flagon"],
     install_requires=["flask", "flask_caching"],
     zip_safe=False
