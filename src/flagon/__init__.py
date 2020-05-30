@@ -6,15 +6,15 @@ from typing import Optional, Union
 from flask import Flask, Response, redirect, request
 from werkzeug.exceptions import HTTPException
 
-from converters.datetime_converter import DatetimeConverter
-from converters.int_list_converter import IntListConverter
-from converters.int_set_converter import IntSetConverter
-from converters.str_list_converter import StrListConverter
-from converters.str_set_converter import StrSetConverter
-from exceptions import APIError
-from requests import JSONRequest
-from responses import JSONResponse
-from routes import BLUEPRINT as DEFAULT_ROUTES_BLUEPRINT
+from .converters.datetime_converter import DatetimeConverter
+from .converters.int_list_converter import IntListConverter
+from .converters.int_set_converter import IntSetConverter
+from .converters.str_list_converter import StrListConverter
+from .converters.str_set_converter import StrSetConverter
+from .exceptions import APIError
+from .requests import JSONRequest
+from .responses import JSONResponse
+from .routes import BLUEPRINT as DEFAULT_ROUTES_BLUEPRINT
 
 log = logging.getLogger(__name__)
 

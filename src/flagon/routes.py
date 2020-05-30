@@ -2,7 +2,7 @@ from collections import defaultdict
 
 from flask import Blueprint, current_app
 
-from responses import JSONResponse
+from .responses import JSONResponse
 
 BLUEPRINT = Blueprint("default_routes", __name__)
 DISPLAY_METHODS = {"GET", "PATCH", "POST", "DELETE"}
